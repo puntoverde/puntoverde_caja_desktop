@@ -1,0 +1,134 @@
+[
+    {
+        "clave": "D01",
+        "descripcion": "Honorarios médicos, dentales y gastos hospitalario",
+        "fisica": "Y",
+        "moral": "N"
+    },
+    {
+        "clave": "D02",
+        "descripcion": "Gastos médicos por incapacidad o discapacidad",
+        "fisica": "Y",
+        "moral": "N"
+    },
+    {
+        "clave": "D03",
+        "descripcion": "Gastos funerales.",
+        "fisica": "Y",
+        "moral": "N"
+    },
+    {
+        "clave": "D04",
+        "descripcion": "Donativos",
+        "fisica": "Y",
+        "moral": "N"
+    },
+    {
+        "clave": "D05",
+        "descripcion": "Intereses reales efectivamente pagados por crédito",
+        "fisica": "Y",
+        "moral": "N"
+    },
+    {
+        "clave": "D06",
+        "descripcion": "Aportaciones voluntarias al SAR.",
+        "fisica": "Y",
+        "moral": "N"
+    },
+    {
+        "clave": "D07",
+        "descripcion": "Primas por seguros de gastos médicos.",
+        "fisica": "Y",
+        "moral": "N"
+    },
+    {
+        "clave": "D08",
+        "descripcion": "Gastos de transportación escolar obligatoria",
+        "fisica": "Y",
+        "moral": "N"
+    },
+    {
+        "clave": "D09",
+        "descripcion": "Depósitos en cuentas para el ahorro, primas que te",
+        "fisica": "Y",
+        "moral": "N"
+    },
+    {
+        "clave": "D10",
+        "descripcion": "Pagos por servicios educativos (colegiaturas)",
+        "fisica": "Y",
+        "moral": "N"
+    },
+    {
+        "clave": "G01",
+        "descripcion": "Adquisición de mercancías",
+        "fisica": "Y",
+        "moral": "Y"
+    },
+    {
+        "clave": "G02",
+        "descripcion": "Devoluciones, descuentos o bonificaciones",
+        "fisica": "Y",
+        "moral": "Y"
+    },
+    {
+        "clave": "G03",
+        "descripcion": "Gastos en general",
+        "fisica": "Y",
+        "moral": "Y"
+    },
+    {
+        "clave": "I01",
+        "descripcion": "Construcciones",
+        "fisica": "Y",
+        "moral": "Y"
+    },
+    {
+        "clave": "I02",
+        "descripcion": "Mobiliario y equipo de oficina por inversiones",
+        "fisica": "Y",
+        "moral": "Y"
+    },
+    {
+        "clave": "I03",
+        "descripcion": "Equipo de transporte",
+        "fisica": "Y",
+        "moral": "Y"
+    },
+    {
+        "clave": "I04",
+        "descripcion": "Equipo de cómputo y accesorios",
+        "fisica": "Y",
+        "moral": "Y"
+    },
+    {
+        "clave": "I05",
+        "descripcion": "Dados, troqueles, moldes, matrices y herramental",
+        "fisica": "Y",
+        "moral": "Y"
+    },
+    {
+        "clave": "I06",
+        "descripcion": "Comunicaciones telefónicas",
+        "fisica": "Y",
+        "moral": "Y"
+    },
+    {
+        "clave": "I07",
+        "descripcion": "Comunicaciones satelitales",
+        "fisica": "Y",
+        "moral": "Y"
+    },
+    {
+        "clave": "I08",
+        "descripcion": "Otra maquinaria y equipo",
+        "fisica": "Y",
+        "moral": "Y"
+    },
+    {
+        "clave": "P01",
+        "descripcion": "Por definir",
+        "fisica": "Y",
+        "moral": "Y"
+    }
+]
