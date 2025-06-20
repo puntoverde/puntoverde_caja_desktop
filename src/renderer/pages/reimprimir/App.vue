@@ -10,7 +10,7 @@
       </v-btn>
     </v-system-bar>
     <v-app-bar dense color="secondary" elevation="1" app style="left:2px;width:calc(100% - 4px)">
-      <v-toolbar-title>Titular:{{ titular }} </v-toolbar-title>   
+      <v-toolbar-title>Titular:{{ titular }}</v-toolbar-title>   
     </v-app-bar>
 
     <v-navigation-drawer permanent app width="290" class="px-1 bg-redx overflow-y-hidden" style="height:calc(100vh - 90px);left:2px">

@@ -69,7 +69,7 @@ SELECT
 		cargo.periodo, 
 		GROUP_CONCAT(
 			DISTINCT 
-				CONCAT_WS(',',
+				CONCAT_WS('¬',
 					#cuota.producto_servicio,
 					cuota.numero_cuota ,
 					cargo.concepto,

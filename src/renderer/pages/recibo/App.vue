@@ -198,7 +198,7 @@ window.electron.onRiciboData((payload: IPagoRecibo) => {
   accion.value = payload.accion;
   cajero.value = payload.persona_cobra;
 
-  const cargos_map = payload.cargos.split("|").map((i) => i.split(","));
+  const cargos_map = payload.cargos.split("|").map((i) => i.split("¬"));
   cargos.value = cargos_map.map(
     (i): ICargosRecibo => ({
       producto_servicio: numeral(i[0]).value(),

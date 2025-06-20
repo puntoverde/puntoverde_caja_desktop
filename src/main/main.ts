@@ -343,6 +343,9 @@ ipcMain.on('get-pagos-periodos',async(e,cve_accion:number,periodos:string[])=>e.
 ipcMain.on('open-recibo-reimprimir',async(e,id_pago:number)=>{
   recibosReimprimirWindow=createWindow({url:'recibo_reimprimir',width:700,height:500,center:true,parent:reimprimirWindow,modal:true});
   const data=await getPagoByID(id_pago)
+
+  console.log("🚀 ~ ipcMain.on ~ data:", data);
+
   recibosReimprimirWindow!.once('ready-to-show',()=>{
     recibosReimprimirWindow!.show();
     recibosReimprimirWindow!.webContents.send('on-data-recibo',data)
