@@ -236,10 +236,32 @@ const Ccuotas = computed(() => {
   if (isNull(find_cuota.value) || find_cuota.value === "")
     return lst_cuotas.value.slice(0, 99);
   else
+    if(cve_accion==1830)
+    return lst_cuotas.value.filter(
+      (i) =>
+        (i.concepto.toLowerCase().includes(find_cuota.value.toLowerCase()) ||
+        i.cve_cuota.toString().includes(find_cuota.value) )
+        &&  ![42,102].some(j=>j==i.cve_cuota)
+    );
+    else if(cve_accion==1914)
+    return lst_cuotas.value.filter(
+      (i) =>
+        (i.concepto.toLowerCase().includes(find_cuota.value.toLowerCase()) ||
+        i.cve_cuota.toString().includes(find_cuota.value) )
+        &&  ![42,43].some(j=>j==i.cve_cuota)
+    );
+    else if(cve_accion>=1 && cve_accion<=1800)
+    return lst_cuotas.value.filter(
+      (i) =>
+        (i.concepto.toLowerCase().includes(find_cuota.value.toLowerCase()) ||
+        i.cve_cuota.toString().includes(find_cuota.value) )
+        &&  ![43,102].some(j=>j==i.cve_cuota)
+    );
+    else
     return lst_cuotas.value.filter(
       (i) =>
         i.concepto.toLowerCase().includes(find_cuota.value.toLowerCase()) ||
-        i.cve_cuota.toString().includes(find_cuota.value)
+        i.cve_cuota.toString().includes(find_cuota.value)         
     );
 });
 
@@ -273,6 +295,8 @@ watch(cuota, (v) => {
 window.electron.onConceptos((payload) => {
   console.log('cve_accion:->', payload)
   cve_accion = payload
+  console.log("estasson las cuotas num",lst_cuotas.value.length)
+  console.log("estasson las cuotas",lst_cuotas.value)
 });
 
 getCuotas();

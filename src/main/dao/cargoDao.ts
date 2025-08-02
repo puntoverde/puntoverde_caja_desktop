@@ -38,6 +38,9 @@ const prueba_time_zone_cargo_dao=async ()=>
 const store=new Store()
 
 const getCuotas = async () => {
+
+  console.log("obtiene las cuotas")
+
   let pool = await fnMysql();
   let connection =await pool.getConnection()
   try {
